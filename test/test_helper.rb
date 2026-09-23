@@ -30,6 +30,7 @@ Dotenv.load
 ENV["AZURE_STORAGE_CONNECTION_STRING"] = "DefaultEndpointsProtocol=https;AccountName=mockaccount;AccountKey=bW9ja2tleQ==" unless ENV["AZURE_STORAGE_CONNECTION_STRING"]
 
 require "minitest/autorun"
+require "minitest/unit"
 require "mocha/minitest"
 require "minitest/reporters"
 Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
